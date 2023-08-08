@@ -2,13 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* @layer components {
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+} */
+
+:root {
+  --black: #05060f;
+  --white: #eaecef;
+  --gray_nav: #58667e;
+  --blue: #205eff;
+  --red: red;
+
+  --body: #f9fbfc;
+  --border: #f2f3f6;
+  --input: #eff2f5;
+  --placeholder: #a6b0c3;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -30,7 +43,7 @@ html {
 
 body {
   z-index: 1;
-  background: $body;
+  background: #a6b0c3;
 }
 
 html,
